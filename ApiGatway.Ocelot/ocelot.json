@@ -1,0 +1,33 @@
+{
+  "ReRoutes": [
+    //{
+    //  "DownstreamPathTemplate": "/api/Authentication/GetAuthTokenJWT",
+    //  "DownstreamScheme": "http",
+    //  "UpstreamPathTemplate": "/api/Authentication/GetAuthTokenJWT",
+    //  "UpstreamHttpMethod": [ "Post" ],
+    //  "DownstreamHostAndPorts": [
+    //    {
+    //      "Host": "127.0.0.1",
+    //      "Port": 4005
+    //    }
+    //  ]
+
+    //},
+    {
+      "DownstreamPathTemplate": "/",
+      "DownstreamScheme": "https",
+      "UpstreamPathTemplate": "/api/{everything}",
+      "UpstreamHttpMethod": [ "Get" ],
+      "DownstreamHostAndPorts": [
+        {
+          "Host": "www.google.com",
+          "Port": 443
+        }
+      ]
+
+    },
+
+
+
+  ]
+}
